@@ -28,18 +28,16 @@
 }
 
 .textcontainer{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.time{
-    padding-top: 30px;
-    padding-bottom: 0;
+.time, .location, .locationbutton, .tip, .temp{
+    border: 1px solid white;
 }
 
-.location{
-    padding-bottom: 10px;
-}
-
-.tip{
-    padding-top: 150px;
+.locationbutton{
+    height: 180px;
 }
