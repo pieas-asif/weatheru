@@ -1,0 +1,22 @@
+BEBAS KAI
+Montserrat regular
+
+first gradient
+starting #F1734A
+ending #ED4497
+angle 135deg
+
+second gradient
+starting #AD5F66
+ending #10164A
+angle -60deg
+
+third gradient
+starting #BAD449
+ending #4FC77F
+angle -60deg
+
+fourth gradient
+starting #73D5DB
+ending #A0A2E1
+angle -60deg
