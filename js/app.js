@@ -22,9 +22,12 @@ var app = new Vue({
 			this.lat = position.coords.latitude;
 			this.lon = position.coords.longitude;
 		},
-		fetchWeatherForCurrentLocation: function() {
+		fetchWeatherForCurrentLocation: async function()  {
 			this.getCurrentPosition();
-			console.log(this.lon);
+			var response = await fetch('https://api.openweathermap.org/data/2.5/weather?lat='+ this.lat + "&lon=" + this.lon + "&appid=" + "4bcccb0e47f16ac96b8707ac00775626");
+			if (response != null) {
+				console.log(response.json());
+			}
 		}
 	} 
 });
