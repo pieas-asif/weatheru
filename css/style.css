@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://db.onlinewebfonts.com/c/f798566a9c8b6647bf0a5b1224f97d83?family=Bebas+Kai');
+@import url('asset/font/BebasKai.ttf');
 
 *, *::after, *::before{
     margin: 0;
@@ -9,9 +9,7 @@
 .app{
     height: 100vh;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
 }
 
 .base{
@@ -53,9 +51,34 @@ img:hover{
     height: 5.2vh;
 }
 
+.icon1{
+    position: relative;
+    top: 5vh;
+    left: 70vh;
+    width: 10vh;
+    height: 10vh;
+}
+
+.icon2{
+    position: relative;
+    top: 40vh;
+    left: 140vh;
+    width: 8vh;
+    height: 8vh;
+}
+
+.icon3{
+    position: relative;
+    top: 80vh;
+    left: 10vh;
+    width: 5vh;
+    height: 5vh;
+}
+
 /* grid */
 
 .textcontainer{
+    z-index: 1;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr .3fr .3fr 2fr 1fr;
@@ -69,6 +92,7 @@ img:hover{
 }
 
 .time{
+    z-index: 1;
     grid-area: time;
     justify-self: center;
     align-self: flex-end;
@@ -76,24 +100,28 @@ img:hover{
 
 .location
 {
+    z-index: 1;
     grid-area: location;
     justify-self: center;
     align-self: flex-start;
 }
 
 .locationbutton{
+    z-index: 1;
     grid-area: button;
     justify-self: center;
     align-self: center;
 }
 
 .tip{
+    z-index: 1;
     grid-area: tips;
     justify-self: center;
     align-self: center;
 }
 
 .temp{
+    z-index: 1;
     grid-area: temp;
     justify-self: center;
 }
