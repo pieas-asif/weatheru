@@ -41,38 +41,42 @@
     color: white;
 }
 
-img{
+.locationbutton img{
     width: 5vh;
     height: 5vh;
 }
 
-img:hover{
+.locationbutton img:hover{
     width: 5.2vh;
     height: 5.2vh;
 }
 
+.icon{
+    position: absolute;
+}
+
 .icon1{
     position: relative;
-    top: 5vh;
-    left: 70vh;
-    width: 10vh;
-    height: 10vh;
+    top: 1vw;
+    left: 30vw;
+    width: 8vw;
+    height: 8vw;
 }
 
 .icon2{
     position: relative;
-    top: 40vh;
-    left: 140vh;
-    width: 8vh;
-    height: 8vh;
+    top: 10vw;
+    left: 60vw;
+    width: 5vw;
+    height: 5vw;
 }
 
 .icon3{
     position: relative;
-    top: 80vh;
-    left: 10vh;
-    width: 5vh;
-    height: 5vh;
+    top: 30vw;
+    left: 5vw;
+    width: 3vw;
+    height: 3vw;
 }
 
 /* grid */
@@ -81,7 +85,7 @@ img:hover{
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr .3fr .3fr 2fr 1fr;
+    grid-template-rows: 1.3fr .3fr .3fr 2fr 1fr;
     grid-template-areas: 
         "time"
         "location"
