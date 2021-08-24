@@ -20,27 +20,62 @@
 
 .time, .temp{
     font-family: 'Bebas Kai', sans-serif;
-    font-size: 3rem;
+    font-size: 8vh;
     color: white;
 }
 
 .location, .tip{
     font-family: 'Montserrat', sans-serif;
-    font-size: 8px;
+    font-size: 2vh;
     color: white;
 }
 
-.textcontainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+img{
+    width: 5vh;
+    height: 5vh;
 }
 
-.time, .location, .locationbutton, .tip, .temp{
-    border: 1px solid white;
+/* grid */
+
+.textcontainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .3fr .1fr 2fr 1fr;
+    grid-template-areas: 
+        "time"
+        "location"
+        "button"
+        "tips"
+        "temp"
+    ;
+}
+
+.time{
+    grid-area: time;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+.location
+{
+    grid-area: location;
+    justify-self: center;
+    align-self: flex-start;
 }
 
 .locationbutton{
-    height: 180px;
+    grid-area: button;
+    justify-self: center;
+    align-self: center;
+}
+
+.tip{
+    grid-area: tips;
+    justify-self: center;
+    align-self: center;
+}
+
+.temp{
+    grid-area: temp;
+    justify-self: center;
 }
