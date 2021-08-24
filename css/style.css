@@ -1,6 +1,6 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://db.onlinewebfonts.com/c/f798566a9c8b6647bf0a5b1224f97d83?family=Bebas+Kai');
-*/
+
 *, *::after, *::before{
     margin: 0;
     padding: 0;
@@ -14,9 +14,22 @@
     justify-content: center;
 }
 
-.sunny{
-    background: linear-gradient(135deg, #F1734A, #ED4497);
+.base{
+    background: linear-gradient(-60deg, #BAD449, #4FC77F);
 }
+
+.sunny{
+    background: linear-gradient(135deg, #AD5F66, #10164A);
+}
+
+.rainy{
+    background: linear-gradient(-60deg, #F1734A, #ED4497);
+}
+
+.cold{
+    background: linear-gradient(-60deg, #73D5DB, #A0A2E1);
+}
+
 
 .time, .temp{
     font-family: 'Bebas Kai', sans-serif;
