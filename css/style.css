@@ -35,6 +35,11 @@ img{
     height: 5vh;
 }
 
+img:hover{
+    width: 5.2vh;
+    height: 5.2vh;
+}
+
 /* grid */
 
 .textcontainer{
