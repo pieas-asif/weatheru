@@ -2,11 +2,11 @@ var app = new Vue({
 	'el': '#app',
 	'data': {
 		'weather': {},
-		'time': '99.99',
+		'hour': '99',
+		'minute': '99',
 		'location': 'Current Locaiton',
 		'tip': 'If fire, git commit, git push, run for life',
 		'temp': '99',
-		'isDay': false,
 		'lat': '',
 		'lon': '',
 		'error': '',
@@ -30,8 +30,8 @@ var app = new Vue({
 			var d = new Date();
 			let _hours = d.getHours();
 			let _minutes = d.getMinutes();
-			console.log(_hours);
-			console.log(_minutes);
+			this.hour = _hours;
+			this.minute = _minutes;
 		}
 	}, 
 	mounted: async function() {
@@ -39,5 +39,14 @@ var app = new Vue({
     	this.lat = position.coords.latitude;
     	this.lon = position.coords.longitude;
     	await this.fetchWeatherForCurrentLocation();
-	} 
+	},
+	beforeCreate: function () {
+	    setInterval(() => {
+	      	this.getTime();
+	    }, 1000);
+	    setInterval(async () => {
+	      	await this.getCoordinates();
+	      	await this.fetchWeatherForCurrentLocation();
+	    }, 1.8e+6);
+	  },
 });
