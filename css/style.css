@@ -15,7 +15,7 @@
 }
 
 .base{
-    background: linear-gradient(-60deg, #BAD449, #4FC77F);
+    background: linear-gradient(135deg, #BAD449, #4FC77F);
 }
 
 .sunny{
@@ -23,11 +23,11 @@
 }
 
 .rainy{
-    background: linear-gradient(-60deg, #F1734A, #ED4497);
+    background: linear-gradient(135deg, #F1734A, #ED4497);
 }
 
 .cold{
-    background: linear-gradient(-60deg, #73D5DB, #A0A2E1);
+    background: linear-gradient(135deg, #73D5DB, #A0A2E1);
 }
 
 
