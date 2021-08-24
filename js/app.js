@@ -24,10 +24,10 @@ var app = new Vue({
 		},
 		fetchWeatherForCurrentLocation: async function()  {
 			this.getCurrentPosition();
-			var response = await fetch('https://api.openweathermap.org/data/2.5/weather?lat='+ this.lat + "&lon=" + this.lon + "&appid=" + "4bcccb0e47f16ac96b8707ac00775626");
-			if (response != null) {
-				console.log(response.json());
-			}
+			// fetch('https://api.openweathermap.org/data/2.5/weather?lat='+ this.lat + "&lon=" + this.lon + "&appid=" + "4bcccb0e47f16ac96b8707ac00775626")
+			// .then(response => response.json())
+			// .then(commits => alert(commits));
+			// TODO: Do These
 		}
 	} 
 });
