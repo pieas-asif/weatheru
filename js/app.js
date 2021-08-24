@@ -4,6 +4,7 @@ var app = new Vue({
 		'weather': {},
 		'hour': '99',
 		'minute': '99',
+		'bgClass': 'base',
 		'location': 'Current Locaiton',
 		'tip': 'If fire, git commit, git push, run for life',
 		'temp': '99',
@@ -25,6 +26,16 @@ var app = new Vue({
 			this.weather = response.data;
 			this.temp = Math.round(this.weather.main.temp);
 			this.location = this.weather.name;
+			let weatherID = this.weather.weather[0].id;
+			if(weatherID >= 700 && weatherID <= 800) {
+				this.bgClass = 'sunny';
+			} else if (weatherID >= 200 && weatherID < 600) {
+				this.bgClass = 'rain';
+			} else if (weatherID >= 600 && weatherID < 700) {
+				this.bgClass = 'snow';
+			} else if (weatherID > 800 && weatherID < 900) {
+				this.bgClass = 'base';
+			}
 		},
 		getTime: function () {
 			var d = new Date();
