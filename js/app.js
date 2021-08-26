@@ -41,7 +41,13 @@ var app = new Vue({
 			var d = new Date();
 			let _hours = d.getHours();
 			let _minutes = d.getMinutes();
+			if(_hours < 10) {
+				_hours = "0" + _hours.toString();
+			}
 			this.hour = _hours;
+			if(_minutes < 10) {
+				_minutes = "0" + _minutes.toString();
+			}
 			this.minute = _minutes;
 		}
 	}, 
