@@ -20,8 +20,6 @@ var app = new Vue({
 			});
 	    },
 		fetchWeatherForCurrentLocation: async function()  {
-			console.log(this.lat);
-			console.log(this.lon);
 			const response = await axios.get(`http://api.openweathermap.org/data/2.5/weather?lat=${this.lat}&lon=${this.lon}&appid=${this.appid}&units=metric`);
 			this.weather = response.data;
 			this.temp = Math.round(this.weather.main.temp);
