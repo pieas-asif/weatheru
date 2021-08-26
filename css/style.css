@@ -139,36 +139,6 @@
     position: absolute;
 }
 
-.icon1{
-    position: fixed;
-    top: 1vh;
-    right: 65vw;
-    width: 8rem;
-    animation: picture_animate-top linear 5s infinite alternate;
-}
-
-.icon2{
-    position: fixed;
-    top: 40vh;
-    left: 70vw;
-    width: 5rem;
-    animation: picture_animate-mid linear 15s infinite alternate;
-    animation-delay: 2s;
-}
-
-.icon3{
-    position: fixed;
-    bottom: 10vh;
-    left: 15vw;
-    width: 4rem;
-    animation: picture_animate-bot linear 9s infinite alternate;
-    animation-delay: 3s;
-}
-
-.icon{
-    position: absolute;
-}
-
 /* icons responsive */
 
 .icon1{
