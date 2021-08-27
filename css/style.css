@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('asset/font/BebasKai.ttf');
+@import url('../asset/font/BebasKai.ttf');
 
 *, *::after, *::before{
     margin: 0;
