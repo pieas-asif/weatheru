@@ -60,7 +60,7 @@
     z-index: 1;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1.3fr .3fr .3fr 2fr 1fr;
+    grid-template-rows: 1.3fr .3fr .4fr 2fr 1fr;
     grid-template-areas: 
         "time"
         "location"
@@ -89,7 +89,7 @@
     z-index: 1;
     grid-area: button;
     justify-self: center;
-    align-self: center;
+    align-self: top;
 }
 
 .tip{
@@ -170,7 +170,7 @@
 @media only screen and (min-width: 500px) {
     .icon1{
         position: fixed;
-        top: .5vh;
+        top: 2vh;
         right: 75vw;
         width: 6rem;
         animation: picture_animate-top linear 5s infinite alternate;
@@ -199,7 +199,7 @@
 @media only screen and (min-width: 800px) {
     .icon1{
         position: fixed;
-        top: 1vh;
+        top: 3vh;
         right: 65vw;
         width: 8rem;
         animation: picture_animate-top linear 5s infinite alternate;
