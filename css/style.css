@@ -6,12 +6,15 @@
     padding: 0;
 }
 
+body {
+    overflow-x: none;
+    overflow-y: none;
+}
+
 .app{
     height: 100vh;
     width: 100vw;
     padding: 0 2vh;
-    overflow-x: none;
-    overflow-y: none;
 }
 
 .base{
