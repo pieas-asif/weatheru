@@ -18,11 +18,11 @@
 }
 
 .sunny{
-    background: linear-gradient(135deg, #AD5F66, #10164A);
+    background: linear-gradient(135deg, #F1734A, #ED4497);
 }
 
 .rain{
-    background: linear-gradient(135deg, #F1734A, #ED4497);
+    background: linear-gradient(135deg, #AD5F66, #10164A);
 }
 
 .snow{
@@ -178,7 +178,7 @@
 
     .icon2{
         position: fixed;
-        top: 40vh;
+        top: 35vh;
         left: 80vw;
         width: 5rem;
         animation: picture_animate-mid linear 15s infinite alternate;
