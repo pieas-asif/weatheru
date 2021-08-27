@@ -21,7 +21,7 @@ var app = new Vue({
 			});
 	    },
 		fetchWeather: async function()  {
-			const response = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?lat=${this.lat}&lon=${this.lon}&appid=${this.appid}&units=metric`);
+			const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${this.lat}&lon=${this.lon}&appid=${this.appid}&units=metric`);
 			this.weather = response.data;
 			this.temp = Math.round(this.weather.main.temp);
 			this.location = this.weather.name;
